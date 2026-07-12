@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
         <ClerkProvider>
           {children}
         </ClerkProvider>
+        <div id='modal-root'></div>
       </body>
     </html>
   );

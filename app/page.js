@@ -2,7 +2,8 @@ import Image from "next/image";
 import { SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 import styles from "./page.module.css";
 import Summary from "@/components/summary";
-import AddExpensePage from "@/components/addExpensePage";
+import AddExpenseButton from "@/components/addExpenseButton";
+import Dashboard from "@/components/dashboard";
 
 export default function Home() {
   return (
@@ -18,7 +19,8 @@ export default function Home() {
       </header>
       <main className={styles.main}>
         <Summary />
-        <AddExpensePage />
+        <Dashboard />
+        <AddExpenseButton />
       </main>
     </div>
   );

@@ -1,0 +1,17 @@
+.card {
+  --card-background: #fff;
+  --card-border: #ebebeb;
+
+  width: 100%;
+  padding: 20px 24px;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background-color: var(--card-background);
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    --card-background: #0a0a0a;
+    --card-border: #1a1a1a;
+  }
+}

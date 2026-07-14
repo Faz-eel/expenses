@@ -2,4 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  align-items: stretch;
+  width: 100%;
+  padding: 4px 0;
 }

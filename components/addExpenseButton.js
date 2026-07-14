@@ -4,7 +4,7 @@ import AddExpense from "./addExpense"
 import Modal from "./Modal"
 import { useState } from "react"
 
-export default function AddExpensePage() {
+export default function AddExpenseButton() {
     const [modalMount, setModalMount] = useState(false);
 
     function onOpenDialog() {

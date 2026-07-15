@@ -1,0 +1,39 @@
+.nav {
+  --text-primary: #000;
+  --text-secondary: #666;
+  --active-background: #f2f2f2;
+
+  display: flex;
+  gap: 4px;
+}
+
+.link,
+.linkActive {
+  padding: 8px 16px;
+  border-radius: 128px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.link {
+  color: var(--text-secondary);
+}
+
+.link:hover {
+  color: var(--text-primary);
+}
+
+.linkActive {
+  color: var(--text-primary);
+  background: var(--active-background);
+}
+
+@media (prefers-color-scheme: dark) {
+  .nav {
+    --text-primary: #ededed;
+    --text-secondary: #999;
+    --active-background: #1a1a1a;
+  }
+}

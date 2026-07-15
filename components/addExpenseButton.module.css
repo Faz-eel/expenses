@@ -1,0 +1,31 @@
+.addButton {
+  --text-primary: #000;
+  --background: #fff;
+  --hover: #383838;
+
+  height: 40px;
+  max-width: 10rem;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 128px;
+  background: var(--text-primary);
+  color: var(--background);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .addButton:hover {
+    background: var(--hover);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .addButton {
+    --text-primary: #ededed;
+    --background: #000;
+    --hover: #ccc;
+  }
+}

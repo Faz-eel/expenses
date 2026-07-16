@@ -62,7 +62,7 @@ export default function ExpenseTable({ data = [] }) {
                     {data.map((item, index) => (
                         <tr key={index}>
                             <td>{item.description}</td>
-                            <td>{item.amount}</td>
+                            <td>${item.amount}</td>
                             <td>{item.category}</td>
                             <td>{item.date}</td>
                         </tr>
@@ -75,7 +75,7 @@ export default function ExpenseTable({ data = [] }) {
                 <div className={styles.card} key={index}>
                     <div className={styles.cardTop}>
                         <span className={styles.cardDescription}>{item.description}</span>
-                        <span className={styles.cardAmount}>{item.amount}</span>
+                        <span className={styles.cardAmount}>${item.amount}</span>
                     </div>
                     <div className={styles.cardMeta}>
                         <span>{item.category}</span>

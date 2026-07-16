@@ -19,7 +19,7 @@ export default function Nav() {
                 href="/expenses"
                 className={pathname === "/expenses" ? styles.linkActive : styles.link}
             >
-                Expenses
+                History
             </Link>
         </nav>
     )

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import SubmitAction from "@/lib/submitAction";
 import { useActionState } from "react";
+import SubmitButton from "./submitButton";
 import styles from "./addExpense.module.css";
 
 export default function AddExpense({ onClose }) {
@@ -54,9 +55,7 @@ export default function AddExpense({ onClose }) {
                     >
                         Cancel
                     </button>
-                    <button type="submit" className={styles.submit}>
-                        Save
-                    </button>
+                    <SubmitButton className={styles.submit} />
                 </div>
             </form>
         </dialog>

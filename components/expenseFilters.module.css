@@ -1,0 +1,98 @@
+.filters {
+  --mint-cream: #0f3d24;
+  --mint-surface: #124a2c;
+  --mint-border: rgba(255, 255, 255, 0.16);
+  --mint-accent: #4ade80;
+  --mint-text: #f8fff9;
+  --mint-muted: rgba(255, 255, 255, 0.76);
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dateFilters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.select {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--mint-border);
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--mint-cream) 0%, var(--mint-surface) 100%);
+  color: var(--mint-text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.select option {
+  color: #0f3d24;
+  background: #ffffff;
+}
+
+.searchButton {
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: var(--mint-accent);
+  color: #0f3d24;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .searchButton:hover:not(:disabled) {
+    background: #6ee7a0;
+  }
+}
+
+.searchButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.categoryFilters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.category,
+.categoryActive {
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category {
+  border-color: rgba(74, 222, 128, 0.35);
+  background: rgba(74, 222, 128, 0.16);
+  color: #14532d;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .category:hover {
+    background: rgba(74, 222, 128, 0.28);
+  }
+}
+
+.categoryActive {
+  border-color: var(--mint-cream);
+  background: var(--mint-cream);
+  color: var(--mint-text);
+}

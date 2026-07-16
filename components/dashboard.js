@@ -25,6 +25,6 @@ export default async function Dashboard() {
     const data = monthly.map(g => ({ category: g.category, total: g._sum.amount.toNumber() }))
 
     return (
-        <MonthlyChart chartType='pie' data={data}/>
+        <MonthlyChart chartType='bar' data={data}/>
     )
 }

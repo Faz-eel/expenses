@@ -9,6 +9,17 @@
   background-color: var(--card-background);
 }
 
+.select {
+  height: 32px;
+  padding: 0 10px;
+  margin-bottom: 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background-color: var(--card-background);
+  font-size: 13px;
+  color: inherit;
+}
+
 @media (prefers-color-scheme: dark) {
   .card {
     --card-background: #0a0a0a;

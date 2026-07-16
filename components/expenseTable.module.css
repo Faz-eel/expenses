@@ -114,6 +114,25 @@
   color: var(--mint-muted);
 }
 
+.skeletonBar {
+  display: inline-block;
+  width: 100%;
+  max-width: 6rem;
+  height: 0.85rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.16);
+  animation: skeletonPulse 1.4s ease-in-out infinite;
+}
+
+@keyframes skeletonPulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 640px) {
   .wrapper {
     display: none;

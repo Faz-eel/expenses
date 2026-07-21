@@ -1,7 +1,7 @@
 .nav {
-  --text-primary: #000;
-  --text-secondary: #666;
-  --active-background: #f2f2f2;
+  --text-primary: var(--text-primary);
+  --text-secondary: var(--text-secondary);
+  --active-background: var(--accent-soft);
 
   display: flex;
   gap: 4px;
@@ -28,12 +28,11 @@
 .linkActive {
   color: var(--text-primary);
   background: var(--active-background);
+  border: 1px solid var(--border);
 }
 
 @media (prefers-color-scheme: dark) {
   .nav {
-    --text-primary: #ededed;
-    --text-secondary: #999;
-    --active-background: #1a1a1a;
+    --active-background: rgba(139, 156, 255, 0.18);
   }
 }

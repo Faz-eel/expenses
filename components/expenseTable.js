@@ -46,6 +46,15 @@ export function ExpenseTableSkeleton() {
 }
 
 export default function ExpenseTable({ data = [] }) {
+    if (!data.length) {
+        return (
+            <div className={styles.empty}>
+                <p className={styles.emptyTitle}>No expenses found</p>
+                <p className={styles.emptyText}>Try adjusting your filters, or add a new expense to get started.</p>
+            </div>
+        )
+    }
+
     return (
         <>
         <div className={styles.wrapper}>

@@ -2,16 +2,25 @@
   display: flex;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 16px;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  padding: 20px 24px;
-  border: 1px solid rgba(191, 220, 193, 0.6);
+  padding: 18px 24px;
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 252, 0.94) 100%);
+  box-shadow: 0 16px 40px var(--shadow);
 }
 
 .auth {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header {
+    background: linear-gradient(135deg, rgba(24, 32, 47, 0.95) 0%, rgba(31, 42, 58, 0.95) 100%);
+    box-shadow: 0 16px 40px rgba(2, 6, 23, 0.45);
+  }
 }

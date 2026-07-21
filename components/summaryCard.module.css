@@ -1,11 +1,11 @@
 .card {
-  --mint-cream: #0f3d24;
-  --mint-surface: #124a2c;
-  --mint-border: rgba(255, 255, 255, 0.16);
-  --mint-text: #ffffff;
-  --mint-muted: rgba(255, 255, 255, 0.72);
-  --mint-accent: #4ade80;
-  --mint-shadow: rgba(6, 32, 18, 0.35);
+  --mint-cream: #182235;
+  --mint-surface: #243244;
+  --mint-border: rgba(226, 232, 240, 0.16);
+  --mint-text: #f8fafc;
+  --mint-muted: rgba(226, 232, 240, 0.72);
+  --mint-accent: #8b9cff;
+  --mint-shadow: rgba(2, 6, 23, 0.35);
 
   position: relative;
   display: flex;
@@ -109,12 +109,12 @@
 }
 
 .progress::-webkit-progress-value {
-  background: linear-gradient(90deg, #9fd0a1 0%, var(--mint-accent) 100%);
+  background: linear-gradient(90deg, #9fb0ff 0%, var(--mint-accent) 100%);
   border-radius: 999px;
 }
 
 .progress::-moz-progress-bar {
-  background: linear-gradient(90deg, #9fd0a1 0%, var(--mint-accent) 100%);
+  background: linear-gradient(90deg, #9fb0ff 0%, var(--mint-accent) 100%);
   border-radius: 999px;
 }
 

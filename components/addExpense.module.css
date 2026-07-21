@@ -1,12 +1,12 @@
 .dialog {
-  --mint-cream: #0f3d24;
-  --mint-surface: #124a2c;
-  --mint-border: rgba(255, 255, 255, 0.18);
-  --mint-accent: #4ade80;
-  --mint-text: #f8fff9;
-  --mint-muted: rgba(255, 255, 255, 0.72);
-  --mint-shadow: rgba(6, 32, 18, 0.4);
-  --input-surface: rgba(255, 255, 255, 0.08);
+  --mint-cream: #182235;
+  --mint-surface: #243244;
+  --mint-border: rgba(226, 232, 240, 0.16);
+  --mint-accent: #8b9cff;
+  --mint-text: #f8fafc;
+  --mint-muted: rgba(226, 232, 240, 0.72);
+  --mint-shadow: rgba(2, 6, 23, 0.4);
+  --input-surface: rgba(148, 163, 184, 0.14);
 
   width: 100%;
   margin: auto;
@@ -99,14 +99,14 @@
 
 .cancel {
   border-color: rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(148, 163, 184, 0.14);
   color: var(--mint-text);
 }
 
 .submit {
-  background: linear-gradient(135deg, #9fd0a1 0%, var(--mint-accent) 100%);
-  color: #0b2a16;
-  box-shadow: 0 10px 22px rgba(74, 222, 128, 0.3);
+  background: linear-gradient(135deg, #9fb0ff 0%, var(--mint-accent) 100%);
+  color: #f8fafc;
+  box-shadow: 0 10px 22px rgba(139, 156, 255, 0.28);
 }
 
 .submit:disabled {

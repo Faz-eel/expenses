@@ -1,9 +1,9 @@
 .addButton {
-  --mint-cream: #0f3d24;
-  --mint-surface: #124a2c;
-  --mint-border: rgba(255, 255, 255, 0.16);
-  --mint-accent: #4ade80;
-  --mint-shadow: rgba(6, 32, 18, 0.35);
+  --mint-cream: #182235;
+  --mint-surface: #243244;
+  --mint-border: rgba(226, 232, 240, 0.16);
+  --mint-accent: #8b9cff;
+  --mint-shadow: rgba(2, 6, 23, 0.35);
 
   display: inline-flex;
   align-items: center;

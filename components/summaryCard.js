@@ -19,14 +19,14 @@ async function RemainingLabel({ totalPromise, budgetPromise }) {
 
 async function UsageBar({ totalPromise, budgetPromise }) {
     const [total, budget] = await Promise.all([totalPromise, budgetPromise]);
-    const used = Math.min((total / budget) * 100, 100);
+    const used = budget > 0 ? Math.min((total / budget) * 100, 100) : 0;
     const remainingPercent = Math.max(100 - used, 0);
     return <progress className={styles.progress} value={remainingPercent} max={100}></progress>;
 }
 
 async function UsedPercent({ totalPromise, budgetPromise }) {
     const [total, budget] = await Promise.all([totalPromise, budgetPromise]);
-    const used = Math.min((total / budget) * 100, 100);
+    const used = budget > 0 ? Math.min((total / budget) * 100, 100) : 0;
     return <span className={styles.stat}>{used.toFixed(2)}% Used</span>;
 }
 

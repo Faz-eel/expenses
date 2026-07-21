@@ -8,10 +8,21 @@ export default function MonthlyChart({ data }) {
     const [chartType, setChartType] = useState('pie');
 
     const COLORS = [
-        "#6366f1", "#f59e0b", "#10b981", "#ef4444",
+        "#8b9cff", "#f59e0b", "#60a5fa", "#ef4444",
         "#3b82f6", "#a855f7", "#ec4899", "#14b8a6",
-        "#84cc16", "#f97316",
+        "#94a3b8", "#f97316",
     ]
+
+    if (!data.length) {
+        return (
+            <div className={styles.card}>
+                <div className={styles.empty}>
+                    <p className={styles.emptyTitle}>No expenses to show</p>
+                    <p className={styles.emptyText}>Add an expense to see your spending breakdown here.</p>
+                </div>
+            </div>
+        )
+    }
 
     if (chartType === 'pie') {
         const pieData = data.map((entry, index) => ({
@@ -64,7 +75,7 @@ export default function MonthlyChart({ data }) {
                     <XAxis dataKey="category" />
                     <YAxis tickFormatter={(v) => `$${v}`} />
                     <Tooltip formatter={(value) => `$${value}`} />
-                    <Bar dataKey="total" fill="#124a2c" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="total" fill="#8b9cff" radius={[4, 4, 0, 0]} />
                 </BarChart>
             </ResponsiveContainer>
         </div>
